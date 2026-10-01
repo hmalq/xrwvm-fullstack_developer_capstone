@@ -1,0 +1,149 @@
+Watching for file changes with StatReloader
+[01/Oct/2026 18:56:17] "GET / HTTP/1.1" 200 2679
+[01/Oct/2026 18:56:17] "GET /static/style.css HTTP/1.1" 200 1918
+[01/Oct/2026 18:56:18] "GET /static/bootstrap.min.css HTTP/1.1" 200 155800
+[01/Oct/2026 18:56:18] "GET /static/car_dealership.jpg HTTP/1.1" 200 263696
+Not Found: /favicon.ico
+[01/Oct/2026 18:56:23] "GET /favicon.ico HTTP/1.1" 404 2678
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 01, 2026 - 18:55:18
+Django version 5.2.17, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/base.py", line 573, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme (usually http:// or https://) but found <your application URL here>. See the release notes for details.
+
+System check identified 1 issue (0 silenced).
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/base.py", line 573, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme (usually http:// or https://) but found <your application URL here>. See the release notes for details.
+
+System check identified 1 issue (0 silenced).
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/base.py", line 573, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme (usually http:// or https://) but found <your application URL here>. See the release notes for details.
+
+System check identified 1 issue (0 silenced).
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/base.py", line 573, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme (usually http:// or https://) but found <your application URL here>. See the release notes for details.
+
+System check identified 1 issue (0 silenced).
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/base.py", line 573, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme (usually http:// or https://) but found <your application URL here>. See the release notes for details.
+
+System check identified 1 issue (0 silenced).
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoenv/lib/python3.11/site-packages/django/core/management/base.py", line 573, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (4_0.E001) As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS setting must start with a scheme (usually http:// or https://) but found <your application URL here>. See the release notes for details.
+
+System check identified 1 issue (0 silenced).
+Performing system checks...
+
