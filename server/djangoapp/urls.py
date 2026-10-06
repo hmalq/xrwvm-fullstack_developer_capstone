@@ -1,3 +1,4 @@
+from django.views.generic import TemplateView
 # Uncomment the imports before you add the code
 from django.urls import path
 from django.conf.urls.static import static
@@ -6,6 +7,7 @@ from . import views
 
 app_name = 'djangoapp'
 urlpatterns = [
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
     path(route='logout', view=views.logout_request, name='logout'),
     # # path for registration
     
@@ -13,7 +15,10 @@ urlpatterns = [
     path(route='login', view=views.login_user, name='login'),
 
     # path for dealer reviews view
+path(route='get_dealers', view=views.get_dealerships, name='get_dealers'),
+    path(route='get_dealers/<str:state>', view=views.get_dealerships, name='get_dealers_by_state'),
 
     # path for add a review view
+    path(route='dealer/<int:dealer_id>', view=views.get_dealer_details, name='dealer_details'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
