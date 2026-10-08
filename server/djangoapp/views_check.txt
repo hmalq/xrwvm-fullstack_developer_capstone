@@ -1,0 +1,44 @@
+89:# def get_dealerships(request):
+90-# ...
+91-#Update the `get_dealerships` render list of dealerships all by default, particular state if state is passed
+92:def get_dealerships(request, state="All"):
+93-    if(state == "All"):
+94-        endpoint = "/fetchDealers"
+95-    else:
+96-        endpoint = "/fetchDealers/"+state
+97-    dealerships = get_request(endpoint)
+98-    return JsonResponse({"status":200,"dealers":dealerships})
+99-
+100-
+101-# Create a `get_dealer_reviews` view to render the reviews of a dealer
+102:# def get_dealer_reviews(request,dealer_id):
+103-# ...
+104:def get_dealer_reviews(request, dealer_id):
+105-    # if dealer id has been provided
+106-    if(dealer_id):
+107-        endpoint = "/fetchReviews/dealer/"+str(dealer_id)
+108-        reviews = get_request(endpoint)
+109-        for review_detail in reviews:
+110-            response = analyze_review_sentiments(review_detail['review'])
+111-            print(response)
+112-            review_detail['sentiment'] = response['sentiment']
+113-        return JsonResponse({"status":200,"reviews":reviews})
+114-    else:
+115-        return JsonResponse({"status":400,"message":"Bad Request"})
+116-
+--
+118:# def get_dealer_details(request, dealer_id):
+119-# ...
+120:def get_dealer_details(request, dealer_id):
+121-    if(dealer_id):
+122-        endpoint = "/fetchDealer/"+str(dealer_id)
+123-        dealership = get_request(endpoint)
+124-        return JsonResponse({"status":200,"dealer":dealership})
+125-    else:
+126-        return JsonResponse({"status":400,"message":"Bad Request"})
+127-
+128-# Create a `add_review` view to submit a review
+129-# def add_review(request):
+130-# ...
+131-def post_review(data_dict):
+132-    request_url = backend_url+"/insert_review"

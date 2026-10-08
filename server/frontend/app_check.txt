@@ -1,0 +1,5 @@
+4:import Dealers from './components/Dealers/Dealers';
+5:import Dealer from "./components/Dealers/Dealer";
+6:import PostReview from "./components/Dealers/PostReview";
+13:      <Route path="/dealers" element={<Dealers/>} />
+14:      <Route path="/dealer/:id" element={<Dealer/>} />

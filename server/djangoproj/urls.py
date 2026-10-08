@@ -23,6 +23,12 @@ urlpatterns = [
     path('register/', TemplateView.as_view(template_name="index.html")),
     path('login/', TemplateView.as_view(template_name="index.html")),
     path('about/', TemplateView.as_view(template_name="About.html")),
+    
+    # React App Routes
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
+    path('dealer/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
+    path('postreview/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
+    
     path('admin/', admin.site.urls),
     path('djangoapp/', include('djangoapp.urls')),
     path('', TemplateView.as_view(template_name="Home.html")),
