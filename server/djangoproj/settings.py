@@ -32,14 +32,15 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'u4420007-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+    'u4420007-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',  # noqa
 ]
 
-# CSRF_TRUSTED_ORIGINS: Full URL with scheme (MUST start with https:// or http://)[cite: 1]
+# CSRF_TRUSTED_ORIGINS: Full URL with scheme (MUST start with https:// or
+# http://)[cite: 1]
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://u4420007-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+    'https://u4420007-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',  # noqa
 ]
 
 # Application definition
@@ -68,7 +69,7 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-                       'DIRS': [
+        'DIRS': [
             os.path.join(BASE_DIR, 'frontend/static'),
             os.path.join(BASE_DIR, 'frontend/build'),
             os.path.join(BASE_DIR, 'frontend/build/static'),
@@ -103,7 +104,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
         'NAME':
@@ -149,9 +150,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
-	os.path.join(BASE_DIR, 'frontend/build'),
-	os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR, 'frontend/build'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
-
-
