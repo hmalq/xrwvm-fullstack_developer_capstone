@@ -1,5 +1,7 @@
-requests
+asgiref
 Django
-Pillow
-gunicorn
 python-dotenv
+requests
+sqlparse
+tzdata
+gunicorn
